@@ -1,3 +1,15 @@
 spring:
   application:
     name: roombooking
+  datasource:
+    url: jdbc:mysql://localhost:3306/roombooking?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  web:
+    error:
+      include-stacktrace: never
+

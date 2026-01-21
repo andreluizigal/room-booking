@@ -1,8 +1,8 @@
-package com.andreluizigal.roombooking.User;
+package com.andreluizigal.roombooking.user;
 
 import jakarta.validation.constraints.NotBlank;
 
-public record UserRequest(
-        @NotBlank(message = "name cannot be empty")
+public record UserPostRequest(
+        @NotBlank(message = "Name cannot be empty")
         String name) {
 }
